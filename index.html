@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finvest - Personal Investment Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f1724;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0b1220;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0ea5a3;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      background-color: #0b1220;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3 {
+      color: #0ea5a3;
+    }
+    footer {
+      text-align: center;
+      background-color: #0b1220;
+      padding: 15px;
+      color: #94a3b8;
+    }
+    ul {
+      list-style-type: square;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finvest</h1>
+    <p>Personal Investment Dashboard</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#investments">Investments</a>
+      <a href="#calculator">Calculator</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Build Smarter, Invest Better</h2>
+      <p>Finvest helps you track your investments, calculate returns, and plan your goals.</p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Portfolio Snapshot</li>
+        <li>Profit and Loss Overview</li>
+        <li>SIP & Growth Calculators</li>
+      </ul>
+    </section>
+
+    <section id="investments">
+      <h2>Your Portfolio</h2>
+      <p><strong>Portfolio Value:</strong> ₹1,24,560</p>
+      <p><strong>Today's Change:</strong> +₹2,480</p>
+      <p><strong>Holdings:</strong></p>
+      <table border="1" cellspacing="0" cellpadding="8" width="100%">
+        <tr>
+          <th>Company</th>
+          <th>Shares</th>
+          <th>Price</th>
+          <th>Value</th>
+          <th>Change</th>
+        </tr>
+        <tr>
+          <td>ABC Ltd.</td>
+          <td>10</td>
+          <td>₹850</td>
+          <td>₹8,500</td>
+          <td style="color:lightgreen;">+2.3%</td>
+        </tr>
+        <tr>
+          <td>XYZ Tech</td>
+          <td>5</td>
+          <td>₹1,600</td>
+          <td>₹8,000</td>
+          <td style="color:red;">-0.7%</td>
+        </tr>
+        <tr>
+          <td>NIFTY ETF</td>
+          <td>2</td>
+          <td>₹54,000</td>
+          <td>₹54,060</td>
+          <td style="color:lightgreen;">+0.1%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="calculator">
+      <h2>SIP Calculator (Coming Soon)</h2>
+      <p>This section will allow you to calculate:</p>
+      <ol>
+        <li>Monthly Investment</li>
+        <li>Expected Annual Return (%)</li>
+        <li>Investment Duration (Years)</li>
+      </ol>
+    </section>
+
+    <section id="about">
+      <h2>About Finvest</h2>
+      <p>Finvest is a simple finance dashboard built using HTML and CSS. It will include interactive calculators and charts in the next phase.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Finvest — SNW Capstone Project</p>
+    <p>Mentor: Rahul Kumar Sir</p>
+  </footer>
+</body>
+</html>
