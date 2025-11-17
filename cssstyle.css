@@ -1,12 +1,11 @@
 body {
       font-family: Arial, sans-serif;
-      background-color: #0f1724;
-      color: white;
+       color: white;
       margin: 0;
       padding: 0;
+      background-image: url(1.webp);
     }
     header {
-      background-color: #0b1220;
       padding: 15px;
       text-align: center;
     }
