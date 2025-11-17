@@ -1,68 +1,42 @@
-:root{
-  --bg:#0f1724; /* dark blue */
-  --card:#0b1220;
-  --accent:#0ea5a3; /* teal */
-  --muted:#94a3b8;
-  --glass: rgba(255,255,255,0.03);
-  --radius: 12px;
-  --max-width:1100px;
-  --gap:1.25rem;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color: #e6eef8;
-}
-
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #08122a 100%);font-family:var(--font-family, Inter, system-ui, Arial)}
-.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
-
-/* Nav */
-header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:20}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:0.6rem 0}
-.brand{display:flex;gap:0.75rem;align-items:center}
-.logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#1fb6b3);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021018}
-.brand h1{font-size:1.05rem;margin:0}
-nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
-nav a{color:var(--muted);text-decoration:none;font-weight:600}
-.cta{background:var(--accent);padding:0.5rem 0.9rem;border-radius:10px;color:#021018;text-decoration:none;font-weight:700}
-
-/* Hero */
-.hero{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center;padding:3rem 0}
-.hero .lead{max-width:640px}
-.eyebrow{color:var(--accent);font-weight:700;margin-bottom:0.5rem}
-h2{font-size:2.1rem;margin:0 0 1rem 0;line-height:1.05}
-p.lead{color:var(--muted);margin:0 0 1.4rem}
-
-.hero-card{background:var(--card);padding:1rem;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-.mini-stats{display:flex;gap:0.75rem}
-.stat{flex:1;padding:0.75rem;border-radius:10px;background:var(--glass)}
-.stat h3{margin:0;font-size:1rem}
-.stat p{margin:0;color:var(--muted);font-size:0.9rem}
-
-/* Features */
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-top:2rem}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.2rem;border-radius:var(--radius)}
-.card h4{margin:0 0 0.5rem 0}
-.card p{margin:0;color:var(--muted);font-size:0.95rem}
-
-/* About / CTA */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.25rem}
-.box{background:var(--card);padding:1.25rem;border-radius:12px}
-
-/* Footer */
-footer{margin-top:3rem;padding:1.5rem 0;color:var(--muted);text-align:center}
-
-/* Utility */
-button{cursor:pointer;border:0}
-
-/* Responsive */
-@media (max-width:900px){
-  .hero{grid-template-columns:1fr}
-  .features{grid-template-columns:repeat(2,1fr)}
-  .split{grid-template-columns:1fr}
-  nav ul{display:none}
-}
-@media (max-width:520px){
-  .features{grid-template-columns:1fr}
-  .logo{width:38px;height:38px}
-  h2{font-size:1.5rem}
-}
+body {
+      font-family: Arial, sans-serif;
+      background-color: #0f1724;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0b1220;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0ea5a3;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      background-color: #0b1220;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    h1, h2, h3 {
+      color: #0ea5a3;
+    }
+    footer {
+      text-align: center;
+      background-color: #0b1220;
+      padding: 15px;
+      color: #94a3b8;
+    }
+    ul {
+      list-style-type: square;
+    }
