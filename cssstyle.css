@@ -17,6 +17,8 @@ body {
     }
     nav a:hover {
       color: #0ea5a3;
+      height: 30px;
+      width: 30px;
     }
     main {
       padding: 20px;
@@ -39,3 +41,11 @@ body {
     ul {
       list-style-type: square;
     }
+    h1:hover{
+      animation: movelogo 2s infinite alternate;
+    }
+    @keyframes movelogo {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(10px);}
+    100% { transform: translateX(50px); }
+}
