@@ -1,93 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finvest - Personal Investment Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finvest - Finance Platform</title>
   <link rel="stylesheet" href="cssstyle.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Finvest</h1>
-    <p>Personal Investment Dashboard</p>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#investments">Investments</a>
-      <a href="#calculator">Calculator</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="intro">
-      <h2>Build Smarter, Invest Better</h2>
-      <p>Finvest helps you track your investments, calculate returns, and plan your goals.</p>
-    </section>
+<header>Finvest - Smart Finance Platform</header>
+<nav>
+  <a href="#market">Market</a>
+  <a href="#calculator">Calculator</a>
+  <a href="#news">Finance News</a>
+</nav>
 
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Portfolio Snapshot</li>
-        <li>Profit and Loss Overview</li>
-        <li>SIP & Growth Calculators</li>
-      </ul>
-    </section>
+<div class="container">
 
-    <section id="investments">
-      <h2>Your Portfolio</h2>
-      <p>Portfolio Value: ₹1,24,560</p>
-      <p>Today's Change: +₹2,480</p>
-      <p>Holdings:</p>
-      <table border="1" cellspacing="0" cellpadding="8" width="100%">
-        <tr>
-          <th>Company</th>
-          <th>Shares</th>
-          <th>Price</th>
-          <th>Value</th>
-          <th>Change</th>
-        </tr>
-        <tr>
-          <td>ABC Ltd.</td>
-          <td>10</td>
-          <td>₹850</td>
-          <td>₹8,500</td>
-          <td style="color:lightgreen;">+2.3%</td>
-        </tr>
-        <tr>
-          <td>XYZ Tech</td>
-          <td>5</td>
-          <td>₹1,600</td>
-          <td>₹8,000</td>
-          <td style="color:red;">-0.7%</td>
-        </tr>
-        <tr>
-          <td>NIFTY ETF</td>
-          <td>2</td>
-          <td>₹54,000</td>
-          <td>₹54,060</td>
-          <td style="color:lightgreen;">+0.1%</td>
-        </tr>
-      </table>
-    </section>
+  <!-- Market Section -->
+  <div class="card" id="market">
+    <div class="section-title">📊 Live Market Prices</div>
+    <div id="stockList"></div>
+  </div>
 
-    <section id="calculator">
-      <h2>SIP Calculator (Coming Soon)</h2>
-      <p>This section will allow you to calculate:</p>
-      <ol>
-        <li>Monthly Investment</li>
-        <li>Expected Annual Return (%)</li>
-        <li>Investment Duration (Years)</li>
-      </ol>
-    </section>
+  <!-- Investment Calculator -->
+  <div class="card" id="calculator">
+    <div class="section-title">💰 Investment Return Calculator</div>
 
-    <section id="about">
-      <h2>About Finvest</h2>
-      <p>Finvest is a simple finance dashboard built using HTML and CSS. It will include interactive calculators and charts in the next phase.</p>
-    </section>
-  </main>
+    <div id="calc">
+      <label>Initial Amount (₹)</label>
+      <input id="amount" type="number" placeholder="Enter amount" />
 
-  <footer>
-    <p>Finvest — SNW Capstone Project</p>
-    <p>Mentor: Rahul Kumar Sir</p>
-  </footer>
+      <label>Annual Interest Rate (%)</label>
+      <input id="rate" type="number" placeholder="Enter rate" />
+
+      <label>Time (Years)</label>
+      <input id="years" type="number" placeholder="Enter years" />
+
+      <button onclick="calculateReturn()">Calculate</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <div class="card" id="news">
+    <div class="section-title">📰 Latest Finance News</div>
+    <ul id="newsList">
+      <li>Market opens higher today with NIFTY gaining 0.8%</li>
+      <li>RBI announces new digital payment norms</li>
+      <li>Sensex hits new record this week</li>
+    </ul>
+  </div>
+
+</div>
+<script src="jsscript.js"></script>
 </body>
 </html>
+

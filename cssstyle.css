@@ -1,51 +1,90 @@
-body {
-      font-family: Arial, sans-serif;
-       color: white;
-      margin: 0;
-      padding: 0;
-      background-image: url(1.webp);
+ body {
+      background: #f2f5f9;
     }
+
     header {
-      padding: 15px;
+      background: #0b5ed7;
+      color: white;
+      padding: 20px;
       text-align: center;
-    }
-    nav a {
-      color: #94a3b8;
-      text-decoration: none;
-      margin: 0 10px;
+      font-size: 28px;
       font-weight: bold;
     }
+
+    nav {
+      background: #003b99;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 6px 10px;
+    }
+
     nav a:hover {
-      color: #0ea5a3;
-      height: 30px;
-      width: 30px;
+      background: white;
+      color: #003b99;
+      border-radius: 5px;
     }
-    main {
+
+    .container {
+      width: 90%;
+      margin: auto;
+      margin-top: 25px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #003b99;
+    }
+
+    .card {
+      background: white;
       padding: 20px;
-    }
-    section {
-      background-color: #0b1220;
       border-radius: 10px;
-      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       margin-bottom: 20px;
     }
-    h1, h2, h3 {
-      color: #0ea5a3;
+
+    /* Market section */
+    #stockList div {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
     }
-    footer {
-      text-align: center;
-      background-color: #0b1220;
-      padding: 15px;
-      color: #94a3b8;
+
+    /* Investment calculator */
+    #calc input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
-    ul {
-      list-style-type: square;
+
+    #calc button {
+      background: #0b5ed7;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    h1:hover{
-      animation: movelogo 2s infinite alternate;
+
+    #calc button:hover {
+      background: #003b99;
     }
-    @keyframes movelogo {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(10px);}
-    100% { transform: translateX(50px); }
-}
+
+    #result {
+      margin-top: 15px;
+      font-size: 20px;
+      color: green;
+      font-weight: bold;
+    }
